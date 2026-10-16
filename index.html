@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puspa Kumari Sahu | BCA Graduate & Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#090d16',
+                        cardbg: '#131c31',
+                        accent: '#6366f1',
+                        accenthover: '#4f46e5'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkbg text-slate-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-darkbg/80 backdrop-blur-md border-b border-slate-800/80 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                <span class="bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text">Puspa Kumari Sahu</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#home" class="hover:text-accent transition">Home</a>
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+
+            <a href="resume.pdf" download="Puspa_Kumari_Sahu_Resume.pdf" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 rounded-xl transition text-white shadow-lg shadow-indigo-500/25">
+                <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-28 pb-16 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+            <!-- Profile Photo Container -->
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-2 border-slate-700 bg-cardbg flex items-center justify-center">
+                    <!-- Put your photo file in the same folder with name 'profile.jpg' -->
+                    <img src="profile.jpg" alt="Puspa Kumari Sahu" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Puspa+Kumari+Sahu&background=6366f1&color=fff&size=256';">
+                </div>
+            </div>
+
+            <!-- Intro Details -->
+            <div class="text-center md:text-left flex-1">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-semibold bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span> BCA Student & Aspiring Developer
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500">Puspa Kumari Sahu</span>
+                </h1>
+                <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-xl leading-relaxed">
+                    Motivated BCA student with a strong interest in software development, web technologies, and cloud computing[cite: 2].
+                </p>
+                
+                <!-- Call to action buttons -->
+                <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="resume.pdf" download="Puspa_Kumari_Sahu_Resume.pdf" class="px-6 py-3.5 font-medium bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 rounded-xl transition text-white shadow-xl shadow-indigo-500/25 flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                    <a href="#projects" class="px-6 py-3.5 font-medium bg-cardbg hover:bg-slate-800 border border-slate-700/80 rounded-xl transition text-slate-200 flex items-center gap-2">
+                        <i class="fa-solid fa-code"></i> View Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Section -->
+    <section class="py-10 border-t border-b border-slate-800/60 bg-slate-950/40">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <h3 class="text-3xl font-extrabold text-indigo-400">BCA</h3>
+                <p class="text-xs text-slate-400 mt-1">Uttaranchal University[cite: 2]</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-3xl font-extrabold text-purple-400">2+</h3>
+                <p class="text-xs text-slate-400 mt-1">Tech Internships[cite: 2]</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-3xl font-extrabold text-pink-400">1 Year</h3>
+                <p class="text-xs text-slate-400 mt-1">Retail Sales Experience[cite: 2]</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-3xl font-extrabold text-blue-400">Dehradun</h3>
+                <p class="text-xs text-slate-400 mt-1">Uttarakhand[cite: 2]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="py-24 px-6 relative">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white">About Me & Education</h2>
+                <p class="text-slate-400 mt-2">Career objective, academic background, and professional vision.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <!-- Professional Bio Card -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center text-indigo-400 justify-center text-xl mb-6">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Career Objective</h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            Motivated BCA student with a strong interest in software development, web technologies, and cloud computing[cite: 2]. Skilled in Python, Java, C++, HTML, and database connectivity, with one year of retail sales experience[cite: 2].
+                        </p>
+                        <p class="text-slate-300 leading-relaxed">
+                            Seeking opportunities to apply technical and communication skills, gain practical industry experience, build a successful career, and develop the knowledge and experience needed to eventually start my own business[cite: 2].
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Academic Record Card -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center text-purple-400 justify-center text-xl mb-6">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Education</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-darkbg/50 rounded-xl border border-slate-800">
+                                <div class="flex justify-between items-center mb-1">
+                                    <h4 class="font-semibold text-white">Bachelor of Computer Applications (BCA)</h4>
+                                    <span class="text-xs bg-indigo-500/20 text-indigo-300 px-2.5 py-1 rounded-md">2024 - 2027</span>
+                                </div>
+                                <p class="text-sm text-slate-400">Uttaranchal University, Dehradun[cite: 2]</p>
+                            </div>
+                            <div class="p-4 bg-darkbg/50 rounded-xl border border-slate-800">
+                                <div class="flex justify-between items-center mb-1">
+                                    <h4 class="font-semibold text-white">Class XII</h4>
+                                    <span class="text-xs bg-purple-500/20 text-purple-300 px-2.5 py-1 rounded-md">2024</span>
+                                </div>
+                                <p class="text-sm text-slate-400">Bihar School Examination Board[cite: 2]</p>
+                            </div>
+                            <div class="p-4 bg-darkbg/50 rounded-xl border border-slate-800">
+                                <div class="flex justify-between items-center mb-1">
+                                    <h4 class="font-semibold text-white">Class X</h4>
+                                    <span class="text-xs bg-pink-500/20 text-pink-300 px-2.5 py-1 rounded-md">2022</span>
+                                </div>
+                                <p class="text-sm text-slate-400">Bihar School Examination Board[cite: 2]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-24 px-6 border-t border-slate-800/60">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Technical Skills & Expertise</h2>
+                <p class="text-slate-400 mt-2">Core programming languages, tools, and fundamentals from my resume.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Programming Languages</h3>
+                    <p class="text-sm text-slate-400">Python, Java, C++[cite: 2].</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Web Technology</h3>
+                    <p class="text-sm text-slate-400">HTML[cite: 2].</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Database & Cloud</h3>
+                    <p class="text-sm text-slate-400">Database Fundamentals, Database Connectivity, Cloud Computing[cite: 2].</p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Core Concepts</h3>
+                    <p class="text-sm text-slate-400">Object-Oriented Programming (OOP), Problem Solving[cite: 2].</p>
+                </div>
+                <!-- Skill 5 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Office Tools</h3>
+                    <p class="text-sm text-slate-400">MS Excel, Microsoft PowerPoint[cite: 2].</p>
+                </div>
+                <!-- Skill 6 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Languages & Interests</h3>
+                    <p class="text-sm text-slate-400">Hindi, English | Cloud Computing, Web Technologies, Entrepreneurship[cite: 2].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Internships Section -->
+    <section id="experience" class="py-24 px-6 border-t border-slate-800/60 bg-slate-950/30">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Internships & Work Experience</h2>
+                <p class="text-slate-400 mt-2">Professional experience and internship details from resume.</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Experience 1 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 sm:p-8 relative shadow-lg">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Cloud Computing Intern</h3>
+                            <p class="text-sm text-indigo-400 font-medium">Internship Studio[cite: 2]</p>
+                        </div>
+                        <span class="mt-2 sm:mt-0 text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 w-fit">8 June 2026 – 13 July 2026[cite: 2]</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Studied cloud computing concepts, services, applications, and practical use cases[cite: 2].</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Learned how cloud technologies support scalable, accessible, and efficient computing[cite: 2].</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 sm:p-8 relative shadow-lg">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Python Intern</h3>
+                            <p class="text-sm text-purple-400 font-medium">Internshala[cite: 2]</p>
+                        </div>
+                        <span class="mt-2 sm:mt-0 text-xs font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20 w-fit">13 June 2025 – 23 July 2025[cite: 2]</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Learned Python fundamentals, programming concepts, and practical applications[cite: 2].</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Gained understanding of how Python is used to solve real-world problems and automate tasks[cite: 2].</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-6 sm:p-8 relative shadow-lg">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Sales Associate / Retail Sales</h3>
+                            <p class="text-sm text-pink-400 font-medium">Mobile Shop[cite: 2]</p>
+                        </div>
+                        <span class="mt-2 sm:mt-0 text-xs font-semibold px-3 py-1 rounded-full bg-pink-500/10 text-pink-300 border border-pink-500/20 w-fit">1 Year[cite: 2]</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Assisted customers with product selection and explained mobile products and accessories[cite: 2].</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Handled customer queries, supported sales, and maintained positive customer relationships[cite: 2].</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Supported billing, stock handling, and routine shop operations[cite: 2].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 border-t border-slate-800/60">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Featured Project</h2>
+                <p class="text-slate-400 mt-2">Projects from your resume.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Card: Feline Guardian -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between hover:border-indigo-500/50 transition shadow-xl">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">Feline Guardian</h3>
+                            <span class="text-xs px-2.5 py-1 bg-indigo-500/20 text-indigo-300 rounded-lg">Pet Health Care App[cite: 2]</span>
+                        </div>
+                        <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+                            Developed a pet-care application concept to help owners monitor and maintain pet health information[cite: 2].
+                        </p>
+                        <div class="space-y-2 mb-6 text-xs text-slate-400">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Designed features for health records, reminders, and regular pet-care activities[cite: 2].</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Used Java programming and database connectivity for managing application information[cite: 2].</div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">Java[cite: 2]</span>
+                            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">Database Connectivity[cite: 2]</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://github.com/puspasah" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition">
+                            <i class="fa-brands fa-github text-lg"></i> GitHub Profile &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certifications Card -->
+                <div class="bg-cardbg border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between hover:border-purple-500/50 transition shadow-xl">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">Certifications & Activities</h3>
+                            <span class="text-xs px-2.5 py-1 bg-purple-500/20 text-purple-300 rounded-lg">Achievements</span>
+                        </div>
+                        <div class="space-y-3 text-sm text-slate-300 mb-6">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-certificate text-purple-400"></i> Python Internship/Training Certificate[cite: 2]</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-certificate text-purple-400"></i> Cloud Computing Internship/Training Certificate[cite: 2]</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-robot text-purple-400"></i> Participated in a Robotics program/event and gained introductory knowledge of robotics[cite: 2].</div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm font-medium text-slate-500 italic">Location: Dehradun, Uttarakhand[cite: 2]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-slate-800/60 bg-slate-950/30">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-4">Let's Connect</h2>
+            <p class="text-slate-400 mb-10">Feel free to reach out for opportunities or collaboration.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-10">
+                <a href="mailto:puspasah82090@gmail.com" class="px-6 py-3 bg-cardbg hover:bg-slate-800 border border-slate-700/80 rounded-xl transition text-slate-200 flex items-center gap-3 text-sm font-medium shadow-lg">
+                    <i class="fa-regular fa-envelope text-indigo-400"></i> puspasah82090@gmail.com[cite: 2]
+                </a>
+                <a href="https://linkedin.com/in/puspa-sah-ab46a5322" target="_blank" class="px-6 py-3 bg-cardbg hover:bg-slate-800 border border-slate-700/80 rounded-xl transition text-slate-200 flex items-center gap-3 text-sm font-medium shadow-lg">
+                    <i class="fa-brands fa-linkedin text-indigo-400"></i> LinkedIn[cite: 2]
+                </a>
+                <a href="https://github.com/puspasah" target="_blank" class="px-6 py-3 bg-cardbg hover:bg-slate-800 border border-slate-700/80 rounded-xl transition text-slate-200 flex items-center gap-3 text-sm font-medium shadow-lg">
+                    <i class="fa-brands fa-github text-indigo-400"></i> GitHub[cite: 2]
+                </a>
+            </div>
+
+            <a href="resume.pdf" download="Puspa_Kumari_Sahu_Resume.pdf" class="inline-flex items-center gap-2 px-8 py-4 font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 rounded-xl transition text-white shadow-xl shadow-indigo-500/25">
+                <i class="fa-solid fa-file-arrow-down text-lg"></i> Download Resume (PDF)
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Puspa Kumari Sahu. Built with modern web standards and hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
